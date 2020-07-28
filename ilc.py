@@ -3,7 +3,7 @@ import pyautogui
 from datetime import date
 
 dthj = date.today()
-day = 1 #dthj.weekday()
+day = dthj.weekday()
 
 os.chdir("C:\Program Files\IBM\BMS\ILC")
 os.startfile("ilcnew.bat")
