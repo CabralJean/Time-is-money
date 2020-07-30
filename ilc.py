@@ -14,7 +14,7 @@ pyautogui.sleep(5)
 
 #Lanca as horas do dia
 if day == 0:   #Segunda
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\awi.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\awi.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(2)
     pyautogui.click(loc)
@@ -35,7 +35,7 @@ if day == 0:   #Segunda
     pyautogui.press('tab')
     pyautogui.press('enter')
     # Insercao das horas
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\mon.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\mon.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -45,15 +45,14 @@ if day == 0:   #Segunda
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 1: #Terca
     pyautogui.sleep(2)
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\tue.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\tue.png',
                                     grayscale=True, confidence=.9)
-    print(lanc)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
     pyautogui.doubleClick(lanc)
@@ -61,13 +60,13 @@ elif day == 1: #Terca
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 2: #Quarta
     pyautogui.sleep(2)
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\wed.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\wed.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -76,13 +75,13 @@ elif day == 2: #Quarta
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 4: #Quinta
     pyautogui.sleep(2)
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\thu.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\thu.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -91,13 +90,13 @@ elif day == 4: #Quinta
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 5: #Sexta
     pyautogui.sleep(2)
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\fri.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\fri.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -106,12 +105,12 @@ elif day == 5: #Sexta
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 6: #Sabado
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\sat.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\sat.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -120,12 +119,12 @@ elif day == 6: #Sabado
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 elif day == 6: #Domingo
-    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\weekdays\sun.png',
+    lanc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\sun.png',
                                     grayscale=True, confidence=.9)
     pyautogui.sleep(0.5)
     lanc = (lanc.left, lanc.top + 25, lanc.width, lanc.height)
@@ -134,7 +133,7 @@ elif day == 6: #Domingo
     pyautogui.press("enter")
 
     pyautogui.sleep(0.5)
-    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\TimeIsMoney\icons\save.png',
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\save.png',
                                    grayscale=True, confidence=.5)
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
