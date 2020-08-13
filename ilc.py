@@ -139,9 +139,3 @@ elif day == 6: #Domingo
     pyautogui.sleep(0.5)
     pyautogui.click(loc)
 
-#print(pyautogui.position())# 1152 342 72 37
-#print(pos.x, pos.y)
-
-
-#os.chdir("C:\Program Files\IBM\BMS\ILC")
-#os.startfile("ilcnew.bat")
