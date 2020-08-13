@@ -6,10 +6,16 @@ dthj = date.today()
 day = dthj.weekday()
 #browse = webdriver.Firefox(executable_path = r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\FirefoxDriver\geckodriver.exe')
 browse = webdriver.Chrome(executable_path= r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\ChromeDriver84\chromedriver.exe')
-browse.get("http://")
+browse.get("")
 
-loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\isc.png',
-                               grayscale=True, confidence=.5)
+loginSvm = True
+while loginSvm:
+    loc = pyautogui.locateOnScreen(r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\icons\isc.png',
+                               grayscale=True, confidence=.7)
+    if loginSvm != None:
+        loginSvm = False
+    pyautogui.sleep(0.5)
+
 loc = (loc.left, loc.top + 65, loc.width, loc.height)
 pyautogui.click(loc)
 pyautogui.write('')
@@ -45,11 +51,24 @@ elif day == 2:  # Quarta
     pyautogui.write("8")
     pyautogui.press("tab")
     pyautogui.press("enter")
-elif day == 4:  # Quinta
+elif day == 3:  # Quinta
+    qui = True
+    while qui:
+        lanc = pyautogui.locateOnScreen(
+            r'C:\Users\JeanMichelMarquesCab\Desktop\TimeIsMoney\Time-is-money\weekdays\qui.png',
+            grayscale=True, confidence=.9)
+        if lanc != None:
+            qui = False
+        pyautogui.sleep(0.5)
+
+    lanc = (lanc.left, lanc.top + 100, lanc.width, lanc.height)
+    pyautogui.click(lanc)
+    pyautogui.write("8")
+    pyautogui.press("tab")
+    pyautogui.press("enter")
+elif day == 4:  # Sexta
     print()
-elif day == 5:  # Sexta
-    print()
-elif day == 6: #Sabado
+elif day == 5: #Sabado
     print()
 elif day == 6:  # Domingo
     print()
